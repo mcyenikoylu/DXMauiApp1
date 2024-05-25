@@ -5,6 +5,7 @@ using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Controls.Compatibility.Hosting;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Hosting;
+using DotNet.Meteor.HotReload.Plugin;
 
 namespace DXMauiApp1
 {
@@ -16,6 +17,9 @@ namespace DXMauiApp1
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+#if DEBUG
+            .EnableHotReload()
+#endif
                 .UseDevExpress(useLocalization: true)
                 .ConfigureFonts(fonts =>
                 {

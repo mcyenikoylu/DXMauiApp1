@@ -54,5 +54,6 @@
 		<PackageReference Include="DevExpress.Maui.DataGrid" Version="23.2.4" />
 		<PackageReference Include="DevExpress.Maui.Scheduler" Version="23.2.4" />
 		<TrimmableAssembly Include="DevExpress.Data.v23.2" />
+		<PackageReference Include="DotNetMeteor.HotReload.Plugin" Version="3.*"/>
 	</ItemGroup>
 </Project>

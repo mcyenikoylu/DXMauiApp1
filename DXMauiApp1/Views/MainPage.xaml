@@ -1,33 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-         xmlns:local="clr-namespace:DXMauiApp1.Views"
-         xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
-         ios:Page.UseSafeArea="true"
-        x:Class= "DXMauiApp1.Views.MainPage">
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:DXMauiApp1.Views"
+       xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+       ios:Page.UseSafeArea="true"
+       x:Class="DXMauiApp1.Views.MainPage">
     <TabBar>
-        <Tab Title="About" Icon="info">
-            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" Route="DXMauiApp1.Views.AboutPage"  />
+        <Tab Title="Home"
+             Icon="home">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}"
+                          Route="DXMauiApp1.Views.AboutPage"/>
         </Tab>
-        <Tab Title ="Browse" Icon="browse">
-            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <Tab Title="Receipts"
+             Icon="recipes">
+            <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}"/>
         </Tab>
-        <Tab Title="Scheduler" Icon="scheduler">
-            <ShellContent ContentTemplate="{DataTemplate local:SchedulerPage}" />
+        <Tab Title="New Add"
+             Icon="g1">
+            <ShellContent ContentTemplate="{DataTemplate local:SchedulerPage}"/>
         </Tab>
-        <Tab Title="DataGrid" Icon="grid">
+        <Tab Title="Settings"
+             Icon="settings2">
             <ShellContent ContentTemplate="{DataTemplate local:DataGridPage}"/>
         </Tab>
-        <Tab Title="Charts" Icon="charts">
-            <ShellContent ContentTemplate="{DataTemplate local:ChartsPage}" />
-        </Tab>
-        <Tab Title="Popup" Icon="popup">
-            <ShellContent ContentTemplate="{DataTemplate local:PopupPage}" />
+        <Tab Title="My Account"
+             Icon="account">
+            <ShellContent ContentTemplate="{DataTemplate local:ChartsPage}"/>
         </Tab>
     </TabBar>
     <TabBar>
         <ShellContent ContentTemplate="{DataTemplate local:LoginPage}"
-                      Route= "DXMauiApp1.Views.LoginPage" />
+                      Route="DXMauiApp1.Views.LoginPage"/>
     </TabBar>
 
 </Shell>
